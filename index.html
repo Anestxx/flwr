@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>what doesnt kill you</title>
+    
+    <!-- P5.js libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="Video Project 1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay">
+    <div id="p5-canvas"></div> <!-- Flower animation canvas -->
+    
+    <div class="content">
+      <!-- Your content here -->
+        <p class="btn mr-5 ml-5">hello<br>
+          click to generate more flowers and music<p>
+    </div>
+    
+    <audio id="bg-music"></audio>
+    <button class="music-toggle" onclick="toggleMusic()">🔊</button>
+    
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="sketch.js"></script> <!-- Flower animation -->
+  <script src="script.js"></script> <!-- Music functionality -->
+  
+</body>
+</html>
